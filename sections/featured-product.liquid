@@ -45,7 +45,7 @@
 {%- endif -%} 
 <div class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %} gradient{% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
   <div class="page-width {% if section.settings.show_thumbnail == false %} slider-arrow--bottom wthumbnail {% endif %}section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
-    <div class="featured-product product product--{{ section.settings.media_size }}  grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 %}grid--2-col-tablet{% else %}placeholder{% endif %}">
+    <div class="featured-product product product--{{ section.settings.media_size }}  grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %} product--thumbnail_slider">
         <media-gallery id="MediaGallery-{{ section.id }}" role="region" class="media__wrapper {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="stacked">
           <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>

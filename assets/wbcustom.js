@@ -52,7 +52,7 @@ setInterval(countDown, 1000);
 function countDown() {
   const countCardSections = document.querySelectorAll('.countd_all');
   countCardSections.forEach((countdownSection) => {
-    var countDownDate = new Date(countdownSection.getAttribute('data-date')).getTime();
+    var countDownDate = new Date(countdownSection.getAttribute('data-date').replaceAll('-','/')).getTime();
     var now = new Date().getTime();
     var distance = countDownDate - now;
     if (distance < 0 || isNaN(countDownDate)) {
