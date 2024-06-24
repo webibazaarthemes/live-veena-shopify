@@ -224,12 +224,12 @@
                           endif
                         -%}
                         <div class="price
-                          {% comment %} {%- if price_class %} {{ price_class }}{% endif -%} {% endcomment %}
+                          {%- if price_class %} {{ price_class }}{% endif -%}
                           {%- if available == false %} price--sold-out {% endif -%}
                           {%- if compare_at_price > price and product.quantity_price_breaks_configured? != true %} price--on-sale{% endif -%}
                           {%- if compare_at_price > price and product.quantity_price_breaks_configured? %} volume-pricing--sale-badge{% endif -%}
                           {%- if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}
-                          price--show-badge">
+                          {%- if show_badges %} price--show-badge{% endif -%}">
                           {%- if product.price -%}
                             <div class="wbvariantbadges"> 
                                 <span class="badge price__badge-sale">
@@ -282,7 +282,7 @@
                   <div class="default-content-heading">{{- 'wbcustomlabel.wballtext.popular_categories' | t -}}</div>
                   <a href="{{ routes.collections_url }}" class="default-heading-link">{{- 'wbcustomlabel.wballtext.all_categories' | t -}}</a>
                 </div>
-                <ul id="predictive-search-results-pages-list-mobile" class="predictive-search__results-list list-unstyled grid grid--4-col-desktop grid--3-col-tablet grid--1-col-tablet-down" role="group" aria-labelledby="prpredictive-search-pages-desktop">
+                <ul id="predictive-search-results-pages-list-mobile" class="predictive-search__results-list list-unstyled grid grid--3-col-desktop grid--3-col-tablet grid--1-col-tablet-down" role="group" aria-labelledby="prpredictive-search-pages-desktop">
                   {%- for collection in predictive_search.resources.collections -%}
                   <li class="collection-list__item grid__item">
                     {% render 'card-collection',

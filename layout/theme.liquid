@@ -301,6 +301,7 @@
       <span>{{ "accessibility.skip_to_text" | t }}</span>
     </a>
     {% sections 'header-group' %}
+    {% sections 'overlay-group' %}
     <main id="MainContent" class="content-for-layout focus-none" tabindex="-1">
       {% render 'breadcrumbs' %}
       {{ content_for_layout }}
@@ -352,5 +353,6 @@
     </script>
     
     <script src="{{ 'wbcustom.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>

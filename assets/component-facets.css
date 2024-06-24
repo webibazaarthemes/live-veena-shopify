@@ -92,7 +92,7 @@
     display: flex;
   }
   .mobile-facets .coll-filter-menu {
-    display: none;
+    display: none !important;
   }
   .mobile-facets .catfiltermain, .mobile-facets .facetinside {
     display: block;

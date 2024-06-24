@@ -41,7 +41,7 @@ Usage:
   -%}
   
   <div class="{% if show_circle == true %}shadow-corner {% endif %} card card--{{ card_style }} card--media{% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{% endif %}{% if extend_height %} card--extend-height{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
-    <div class="{%- if card_collection.featured_image == blank -%}blank_coll {% endif %} card__inner {% if show_circle == true %}collection-corner {% endif %} {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_style == 'card' or card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+    <div class="{%- if card_collection.featured_image == blank and collection_img == blank -%}blank_coll {% endif %} card__inner {% if show_circle == true %}collection-corner {% endif %} {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_style == 'card' or card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
       {% if collection_img != blank %}
         <div class="card__media {% if show_circle == true %}collection-corner{% endif %}">
           {%- if collection_title -%}
@@ -87,8 +87,9 @@ Usage:
           {{ 'collection-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
         </div> {% endcomment %}
       {%- endif -%}
-      {%- if card_collection.featured_image == blank -%}
-        <div class="card__content blank__image {{ design_type }} {% if section.settings.design_align == 'left' %} left {% endif %}">
+      {%- if card_collection.featured_image == blank and collection_img == blank -%}
+        
+          <div class="card__content blank__image {{ design_type }} {% if section.settings.design_align == 'left' %} left {% endif %}">
           <div class="{% if design_type == 'over' %} color-{{ blockcolor_scheme }} gradient banner--desktop-transparent{% endif %}">
             <div>
           {% if settings.show_collection_title == true %}
@@ -131,11 +132,12 @@ Usage:
               </div>
           </div>
         </div>
+        
       {%- endif -%}
     </div>
 
     {% if show_collection_title or show_item_count %}
-      {% if card_collection.featured_image != blank %}
+      {% if card_collection.featured_image != blank or collection_img != blank %}
       <div class="card__content{% if collection_info != blank %} content-disabled{% endif %} {{ design_type }} {% if section.settings.design_align == 'left' %} left {% endif %}">
         <div class="card__information {% if design_type == 'over' %} color-{{ blockcolor_scheme }} gradient banner--desktop-transparent{% endif %}">
           <div>

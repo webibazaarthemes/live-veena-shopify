@@ -11,7 +11,8 @@
   height: auto;
   text-transform: uppercase;
   font-size: calc(var(--font-body-scale) * 22px);
-  color: rgb(var(--color-background))
+  color: rgb(var(--color-background));
+  z-index: 9;
 }
 .video--full .global-media-settings, .video--full .deferred-media__poster {
   border-radius: 0;

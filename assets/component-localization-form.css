@@ -181,7 +181,7 @@ noscript .localization-selector.link {
 }
 
 .disclosure__link:hover {
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-link-hover));
 }
 .disclosure__button[aria-expanded='true'] .icon-caret {
   transform: rotate(180deg);

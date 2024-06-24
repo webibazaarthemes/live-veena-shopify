@@ -33,6 +33,7 @@
     text-align: center;
     gap: 10px;
     margin-top: 5px;
+    justify-content: center;
 }
 .banner_timer_text span {
     min-width: 45px;

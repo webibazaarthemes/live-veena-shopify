@@ -126,6 +126,7 @@
 
 
       </div>
+      {%- if settings.show_cart_countdown -%} 
       <div class="cdownright-{{ section.id }} color-{{ settings.cdrawer_color_scheme }} gradient countdown_wrapper content-container">
         <div class="countdown-heading-wrapper">
           {% if settings.heading != blank %}
@@ -153,6 +154,7 @@
             </div>
         </div>
       </div>
+    {%- endif -%}
         <cart-drawer-items {% if cart == empty %}class="is-empty"{% endif %}>
           <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post">
             <div id="CartDrawer-CartItems" class="drawer__contents js-contents">

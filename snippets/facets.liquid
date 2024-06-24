@@ -610,51 +610,24 @@
                                 assign is_disabled = true
                               endif
                             %}
-                            <li class="mobile-facets__item list-menu__item" {% if filter.label == 'Color' %} data-title="{{ value.label | escape }} ({{ value.count }})" {% endif %}>
-                              <label for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}" class="facets__label mobile-facets__label{% if is_disabled %} mobile-facets__label--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %} {% if filter.label == 'Color' %} catfiltercolor {% endif %}">
+                             <li class="mobile-facets__item list-menu__item" {% if filter.label == 'Color' %} data-title="{{ value.label | escape }} ({{ value.count }})" {% endif %}>
+
+                              <label for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}" class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %} {% if filter.label == 'Color' %} catfiltercolor {% endif %}">
+                                
                                 {%- liquid
                                   assign swatchfilename = value.label | handle | append: '.' | append: 'png'
                                   assign swatchimage = swatchfilename | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
                                   assign colorswatchvalue = value.label | downcase | replace: ' ', ''
                                 -%}
-                                <input class="mobile-facets__checkbox" type="checkbox" name="{{ value.param_name }}" value="{{ value.value }}" id="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }} {% if is_disabled %} disabled {% endif %}"
+                                <input class="mobile-facets__checkbox" type="checkbox" name="{{ value.param_name }}" value="{{ value.value }}" id="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
                                   {% if value.active %}checked{% endif %}
                                   {% if value.count == 0 and value.active == false %}disabled{% endif %}
                                   {% if filter.label == 'Color' %}style="background-color: {{ colorswatchvalue }};{% if images[swatchfilename] != blank %}  background-image: url({{ swatchimage }});{% endif %} "{% endif %}>
-                                  {% if has_visual_display %}
-                                    <div class="facets__visual-display-wrapper">
-                                      {% render 'visual-display',
-                                        type: value.display.type,
-                                        value: value.display.value,
-                                        presentation: filter.presentation
-                                      %}
-                                    </div>
-                                  {% else %}
-                                  <span class="mobile-facets__highlight"></span>
-                                  <svg
-                                    width="1.6rem"
-                                    height="1.6rem"
-                                    viewBox="0 0 16 16"
-                                    aria-hidden="true"
-                                    focusable="false"
-                                  >
-                                    <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
-                                  </svg>
-                                  <svg
-                                    aria-hidden="true"
-                                    class="icon icon-checkmark"
-                                    width="1.1rem"
-                                    height="0.7rem"
-                                    viewBox="0 0 11 7"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
-                                  </svg>
-                                {% endif %}
+                                <span class="mobile-facets__highlight"></span>
+                                <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect></svg>
+                                {% render 'icon-checkmark' %}
 
-                                <span class="facet-checkbox__text" aria-hidden="true">
-                                  {{- value.label | escape }} ({{ value.count }})</span>
+                                <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
                                 <span class="visually-hidden">{{ value.label | escape }} ({% if value.count == '1' %}{{ 'products.facets.product_count_simple.one' | t: count: value.count }}{% else %}{{ 'products.facets.product_count_simple.other' | t: count: value.count }}{% endif %})</span>
                               </label>
                             </li>
@@ -664,7 +637,7 @@
                           <facet-remove class="mobile-facets__clear-wrapper">
                             <a href="{{ results_url }}" class="mobile-facets__clear underlined-link">{{ 'products.facets.clear' | t }}</a>
                           </facet-remove>
-                          <button type="button" class="no-js-hidden button button--primary" onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">{{ 'products.facets.apply' | t }}</button>
+                          <button type="button" class="no-js-hidden button button--primary" onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()"><span>{{ 'products.facets.apply' | t }}</span></button>
                           <noscript><button class="button button--primary">{{ 'products.facets.apply' | t }}</button></noscript>
                         </div>
                       </div>

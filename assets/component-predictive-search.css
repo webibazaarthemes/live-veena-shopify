@@ -15,7 +15,7 @@ predictive-search .wbproduct-container .wbproductdes, predictive-search .wbprodu
 .predictive-search.predictive-search--header{
   display: none;
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   left: 0;
   right: 0;
   top: calc(100%);
@@ -279,10 +279,10 @@ button.predictive-search__item.predictive-search__item--term {
 .search-left-part .card__inner.wbimgblock, #predictive-search-results-groups-wrapper .search_result-products .card__inner,
 .search_blog-wrapper .card__inner, .search_result-articles.search__results .card__inner {
   width: 100%;
-  max-width: 20%;
+  max-width: 22%;
 }
 .search_blog-wrapper .card__content, .search_result-articles.search__results .card__content {
-  width: 80%;
+  width: 78%;
 }
 .search_blog-wrapper .card__content.blog_blank, .search_result-articles.search__results .card__content.blog_blank {
   width: 100%;

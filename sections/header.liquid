@@ -24,22 +24,34 @@
     justify-self: start;
   }
   {%- if section.settings.head_shadow == 'head_shadow_all' -%}
-  sticky-header.header-wrapper {
+  .header-wrapper {
     box-shadow: 0 6px 12px -12px rgba(var(--color-shadow),0.6);
   }
   {%- endif -%}
   {%- if section.settings.head_shadow == 'head_shadow_home' -%}
-  sticky-header.header-wrapper {
+  .header-wrapper {
     box-shadow: 0 6px 12px -12px rgba(var(--color-shadow),0.6);
   }
-  .page-index sticky-header.header-wrapper {
+  .page-index .header-wrapper {
     box-shadow: none;
   }
   {%- endif -%}
   .shopify-section-header-sticky sticky-header.header-wrapper {
     box-shadow: 0 6px 12px -12px rgba(var(--color-shadow),0.6);
   }
-  
+  {%- if section.settings.sticky_header_type == 'reduce-logo-size' and section.settings.head_shadow == 'head_shadow_home' -%}
+    .page-index .shopify-section-header-sticky sticky-header.header-wrapper {
+      box-shadow: none;
+    }
+  {%- endif -%}
+  {%- if section.settings.sticky_header_type == 'always' and section.settings.head_shadow == 'head_shadow_home' -%}
+    .page-index .shopify-section-header-sticky sticky-header.header-wrapper {
+      box-shadow: none;
+    }
+  {%- endif -%}
+  .shopify-section-header-sticky.scrolled-past-header sticky-header.header-wrapper {
+    box-shadow: 0 6px 12px -12px rgba(var(--color-shadow),0.6);
+  }
 
   {%- if section.settings.logo_position == 'top-left' -%}
     .psearch-hidden {
@@ -1042,7 +1054,7 @@
                                             <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                                             {% render 'icon-caret' %}
                                           </summary>
-                                          <div id="HeaderMenu-MenuList-{{ forloop.index }}" class="color-{{ section.settings.color__dropmenu }} gradient header__submenu {% if link.links.size < 4 and displaymegamenu == false %}hsmenucont{% endif %} list-menu list-menu--disclosure caption-large motion-reduce {% if link.links.size > 3 or displaymegamenu %}wbmenufull{% endif %}" tabindex="-1">
+                                          <div id="HeaderMenu-MenuList-{{ forloop.index }}" class="color-{{ section.settings.color__dropmenu }} gradient header__submenu {% if link.links.size < 4 and displaymegamenu == false %}hsmenucont{% endif %} list-menu list-menu--disclosure global-settings-popup caption-large motion-reduce {% if link.links.size > 3 or displaymegamenu %}wbmenufull{% endif %}" tabindex="-1">
                                           {% render 'megamenu', blocks: section.blocks, title: link.title %}
                                           </div>
                                       </details>
@@ -1362,7 +1374,7 @@
             </localization-form>
           {% endif %}
         </div>
-        {%- if section.settings.logo_position == 'top-center' or section.settings.logo_position == 'middle-left' -%} 
+        {%- if section.settings.logo_position == 'top-center' or section.settings.logo_position == 'middle-left' and section.settings.menu != blank -%} 
           <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>  
           <details-modal class="header__search">
             <details>

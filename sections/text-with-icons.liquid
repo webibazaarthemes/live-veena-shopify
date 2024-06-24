@@ -37,7 +37,7 @@
 {%- endstyle -%}
 
 <div class="deliveryinfomain section-{{ section.id }} section-{{ section.id }}-margin">
-<div class="multicolumn {% if section.settings.title == blank %} no-heading{% endif %} section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient">
+<div class="multicolumn {% if section.settings.title == blank %} no-heading{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width isolate">
       {%- unless section.settings.title == blank -%}
         <div class="{{ section.settings.head_align }} title-wrapper-with-link title-wrapper content-container color-{{ section.settings.heading_color_scheme }}">
@@ -50,7 +50,7 @@
           </div>
         </div>
       {%- endunless -%}
-      <div class="deliveryinfo{% if section.blocks.size > 0 %} content-container {% endif %} {% if section.settings.show_seprator == true %} deliveryseprator {% endif %} deliveryinfo-{{ section.id }} multicolumn-list grid grid--1-col-tablet-down grid--{{ section.blocks.size }}-col-tablet">
+      <div class="section-{{ section.id }}-padding deliveryinfo{% if section.blocks.size > 0 %} content-container {% endif %} {% if section.settings.show_seprator == true %} deliveryseprator {% endif %} deliveryinfo-{{ section.id }} multicolumn-list grid grid--1-col-tablet-down grid--{{ section.blocks.size }}-col-tablet">
         {%- for block in section.blocks -%}
         <ul class="list-unstyled multicolumn-list__item grid__item flex_direction--{{ section.settings.flex_direction }} {{ section.settings.column_alignment }}" {{ block.shopify_attributes }}>
             <li>
@@ -58,9 +58,10 @@
                 {% if block.settings.custom_image != blank %}
                   <img src="{{ block.settings.custom_image | image_url: width: 60, height: 60 }}" height="60" width="60" loading="eager">
                 {% else %}
-                  {% render 'icon-allservice', icon: block.settings.icon1 %}</span></li>
+                  {% render 'icon-allservice', icon: block.settings.icon1 %}
                 {% endif %}
-                
+                </span>
+            </li>
             <li>
               <div class="text-with-icon_card__info">
                 {%- if block.settings.title != blank -%}
@@ -85,7 +86,8 @@
   "max_blocks": 5,
   "disabled_on": {
     "groups": [
-      "header"
+      "header",
+      "custom.overlay"
     ]
   },
   "settings": [

@@ -31,6 +31,9 @@
   gap: 10px;
   align-items: center;
 }
+.blog__read_more a.button {
+  text-align: center
+}
 .blog__posts .card-wrapper .card.article-card{
   gap: 10px;
 }

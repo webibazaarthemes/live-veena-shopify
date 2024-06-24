@@ -1984,10 +1984,10 @@ product-recommendations .wbvariantbadges{
   }
 }
 @media screen and (max-width: 767px) {
-    .product--mobile-hide media-gallery .grid--peek .grid__item  {
-        width: 100%;
-        max-width: 100%;
-    }
+  .product--mobile-hide media-gallery .grid--peek .grid__item  {
+      width: calc(100% - 1.5rem - var(--grid-mobile-horizontal-spacing));
+      max-width: calc(100% - 1.5rem - var(--grid-mobile-horizontal-spacing));
+  }
   .complementary-products .complementary-slide .grid__item {
     max-width: calc(33.33% - var(--grid-mobile-horizontal-spacing) * 2 / 3);
     width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
@@ -2139,6 +2139,9 @@ product-recommendations .wbvariantbadges{
   }
 }
 @media (max-width: 575px) {
+  .product__info-container .product-form__buttons .button--primary {
+    font-size: calc(var(--font-body-scale) * 14px);
+  }
   .ppage_countmain{
     display: block;
   }

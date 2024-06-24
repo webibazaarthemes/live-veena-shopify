@@ -39,6 +39,9 @@
   background: var(--gradient-background);
   border-radius: var(--border-radius);
 }
+.wbproduct-container .card.card--standard .wbproductdes.parent-selected {
+  padding-top: 6px;
+}
 .over_scroll .grid__item {
   overflow: hidden;
 }
@@ -470,6 +473,9 @@ wb-card-variant {
   opacity: 0.8;
   border-radius: 0;
   box-shadow: none;
+  width: auto;
+  height: auto;
+  margin: 0;
 }
 .product-form__input input[type="radio"],
 .wbswatchclr input[type="radio"] {
@@ -491,18 +497,33 @@ wb-card-variant {
   position: relative;
   padding: 0;
   border-radius: var(--variant-pills-radius);
-  width: calc(22px + (var(--variant-pills-border-width) * 2));
-  height: calc(22px + (var(--variant-pills-border-width) * 2));
-  min-width: calc(22px + (var(--variant-pills-border-width) * 2));
-  min-height: calc(22px + (var(--variant-pills-border-width) * 2));
+  width: calc(14px + (var(--variant-pills-border-width) * 2));
+  height: calc(14px + (var(--variant-pills-border-width) * 2));
+  min-width: calc(14px + (var(--variant-pills-border-width) * 2));
+  min-height: calc(14px + (var(--variant-pills-border-width) * 2));
   box-shadow: 0 0 0 1px rgba(var(--color-foreground),0.1);
   font-size: 0;
   background-repeat: no-repeat;
   background-position: 50%;
-  background-size: 25px;
+  background-size: 17px;
   margin: 2px;
   line-height: 1;
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground),var(--variant-pills-border-opacity));
+}
+.wbswatchclr input + label::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  left: -3px;
+  right: -3px;
+  top: -3px;
+  bottom: -3px;
+  margin: -2px;
 }
 .wbswatchclr input + label::before {
     content: "";

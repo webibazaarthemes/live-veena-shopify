@@ -87,6 +87,9 @@
 #product-grid{
     margin: 0;
 }
+.wbglbtn.small-hide {
+    min-width: max-content;
+}
 .product-list .grid__item {
     flex: 0 0 100%;
     max-width: 100%;
