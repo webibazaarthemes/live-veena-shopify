@@ -1,1 +1,87 @@
-{"sections":{"main":{"type":"main-blog","blocks":{"cef8201f-048b-4ff2-bd44-6b72dd7ceb2e":{"type":"categories","settings":{"heading":"Heading","blog_categories":"<p>Add blog categories<\/p>"}},"bf51eb80-2ea9-44a7-b6a3-ef334e8e7dcf":{"type":"Products","settings":{"heading":"Heading","blog_product":["apple-iphone-14-pro-256gb-space-black-verizon-demo","baby-girl-blue-princess-birthday-party-dress-toddler-girl-party-dress"]}},"09227102-5b1f-4dd5-83d9-c5bcff0a356b":{"type":"Tag","disabled":true,"settings":{"heading":"Heading"}},"3e3b907d-8472-424b-9e6d-ac08944863c5":{"type":"recentpost","settings":{"heading":"Heading","blog_recentview":""}},"965c9cac-718e-4da4-895b-617e4fe69bde":{"type":"Banner","settings":{"heading":"Heading","link":""}}},"block_order":["cef8201f-048b-4ff2-bd44-6b72dd7ceb2e","bf51eb80-2ea9-44a7-b6a3-ef334e8e7dcf","09227102-5b1f-4dd5-83d9-c5bcff0a356b","3e3b907d-8472-424b-9e6d-ac08944863c5","965c9cac-718e-4da4-895b-617e4fe69bde"],"settings":{"headingmain_color_scheme":"scheme-abe3bc68-5409-41dd-abcf-8f9ac474947a","show_sidebar":true,"sidebar_position":"left","heading_color_scheme":"","layout":"grid","show_image":true,"image_height":"adapt","columns_desktop":2,"date_position":"below","show_date":true,"show_author":true,"show_cmment":true,"show_read_more_button":true,"secerpt":"truncate","read_more_style":"link","padding_top":0,"padding_bottom":60}}},"order":["main"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "blocks": {
+        "cef8201f-048b-4ff2-bd44-6b72dd7ceb2e": {
+          "type": "categories",
+          "settings": {
+            "heading": "Blog categories",
+            "blog_categories": "<p><a href=\"\/blogs\/news\" title=\"News\">News<\/a><\/p><p><a href=\"\/blogs\/headphone\" title=\"Headphone\">Headphone<\/a><\/p>"
+          }
+        },
+        "bf51eb80-2ea9-44a7-b6a3-ef334e8e7dcf": {
+          "type": "Products",
+          "settings": {
+            "heading": "Sale Products",
+            "blog_product": [
+              "apple-20w-type-c-fast-charger-adapter-only-optimal-performance-white",
+              "1400-watt-vacuum-cleaner",
+              "9-5mm-internal-hard-drive"
+            ]
+          }
+        },
+        "09227102-5b1f-4dd5-83d9-c5bcff0a356b": {
+          "type": "Tag",
+          "disabled": true,
+          "settings": {
+            "heading": "Blog tags"
+          }
+        },
+        "3e3b907d-8472-424b-9e6d-ac08944863c5": {
+          "type": "recentpost",
+          "settings": {
+            "heading": "Recent Post",
+            "blog_recentview": "news"
+          }
+        },
+        "965c9cac-718e-4da4-895b-617e4fe69bde": {
+          "type": "Banner",
+          "settings": {
+            "heading": "Trending Now",
+            "image": "shopify:\/\/shop_images\/6_c8ccc498-8dd5-49cc-a506-04926b71635d.jpg",
+            "link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "cef8201f-048b-4ff2-bd44-6b72dd7ceb2e",
+        "bf51eb80-2ea9-44a7-b6a3-ef334e8e7dcf",
+        "09227102-5b1f-4dd5-83d9-c5bcff0a356b",
+        "3e3b907d-8472-424b-9e6d-ac08944863c5",
+        "965c9cac-718e-4da4-895b-617e4fe69bde"
+      ],
+      "settings": {
+        "headingmain_color_scheme": "scheme-abe3bc68-5409-41dd-abcf-8f9ac474947a",
+        "show_sidebar": true,
+        "sidebar_position": "left",
+        "heading_color_scheme": "",
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "medium",
+        "columns_desktop": 2,
+        "date_position": "below",
+        "show_date": true,
+        "show_author": true,
+        "show_cmment": true,
+        "show_read_more_button": true,
+        "secerpt": "truncate",
+        "read_more_style": "link",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
