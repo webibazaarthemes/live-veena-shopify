@@ -1,1 +1,84 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"a60a778d-47b9-4110-97be-5cb64c8683a6":{"type":"brand_information","settings":{"icon":true,"heading":"Store name","footer_address":"Address: Write your store's address details.","footer_contact_no":"0123-456-789","footer_contact_id":"Email: your@email.com","contsubtext":"<p>Find a nearest Store location<\/p>","description_style":"body"}},"1eaec265-9907-4fab-8055-4628bfc597dd":{"type":"link_list","settings":{"heading":"Quick links","menu":"main-menu"}},"6883615a-521f-4327-a7c7-ff0f768a9228":{"type":"link_list","settings":{"heading":"Quick links","menu":"footer"}},"461fde0a-cd9d-4263-a0b6-af045ee444fa":{"type":"newsletter","settings":{"heading":"Newsletter","description_style":"uppercase","news_subtext":"<p>Use this text to share information about brand with customers.<\/p>","news_bottom_text":"By subscribing you agree to with our Privacy Policy"}}},"block_order":["a60a778d-47b9-4110-97be-5cb64c8683a6","1eaec265-9907-4fab-8055-4628bfc597dd","6883615a-521f-4327-a7c7-ff0f768a9228","461fde0a-cd9d-4263-a0b6-af045ee444fa"],"settings":{"enable_follow_on_shop":true,"social_heading":"","show_social":false,"show_bg":false,"footer-logo_width":130,"contact_number":"","localization_heading":"","enable_country_selector":false,"enable_language_selector":false,"show_policy":true,"payment_enable":true,"show_copyright":true,"scroll-to-top":true,"color_scheme":"accent-2","margin_top":0,"padding_top":20,"padding_bottom":20}}},"order":["footer"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "a60a778d-47b9-4110-97be-5cb64c8683a6": {
+          "type": "brand_information",
+          "settings": {
+            "icon": true,
+            "heading": "Contact us",
+            "footer_address": "Address: 4800 San Mateo Ln NE",
+            "footer_contact_no": "<a href=\"tel:0123-456-789\" title=\"tel:0123-456-789\">0123-456-789<\/a>",
+            "footer_contact_id": "Email: <a href=\"mailto:demo@demo.com\" title=\"mailto:demo@demo.com\">demo@demo.com<\/a>",
+            "contsubtext": "<p>Find a nearest Store <a href=\"\/pages\/contact\" title=\"Contact\">location<\/a><\/p>",
+            "description_style": "body"
+          }
+        },
+        "1eaec265-9907-4fab-8055-4628bfc597dd": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Popular Collections",
+            "menu": "footer"
+          }
+        },
+        "6883615a-521f-4327-a7c7-ff0f768a9228": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Information",
+            "menu": "information"
+          }
+        },
+        "461fde0a-cd9d-4263-a0b6-af045ee444fa": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "sign up to our newsletter",
+            "description_style": "uppercase",
+            "news_subtext": "<p>Use this text to share information about brand with customers.<\/p>",
+            "news_bottom_text": "By subscribing you agree to with our <a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\">Privacy Policy<\/a>"
+          }
+        }
+      },
+      "block_order": [
+        "a60a778d-47b9-4110-97be-5cb64c8683a6",
+        "1eaec265-9907-4fab-8055-4628bfc597dd",
+        "6883615a-521f-4327-a7c7-ff0f768a9228",
+        "461fde0a-cd9d-4263-a0b6-af045ee444fa"
+      ],
+      "settings": {
+        "enable_follow_on_shop": true,
+        "social_heading": "",
+        "show_social": true,
+        "show_bg": false,
+        "footer_logo": "shopify:\/\/shop_images\/Veena-W.png",
+        "footer-logo_width": 100,
+        "contact_number": "Call us: <strong>+01234 56789<\/strong>",
+        "localization_heading": "",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "show_policy": true,
+        "payment_enable": true,
+        "show_copyright": true,
+        "scroll-to-top": true,
+        "color_scheme": "accent-2",
+        "margin_top": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
