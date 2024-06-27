@@ -1,1 +1,419 @@
-{"sections":{"main":{"type":"main-page","settings":{"heading_size":"h0","head_align":"left","heading_color_scheme":"","head_space":false,"padding_top":0,"padding_bottom":0}},"multirow_e3MPJr":{"type":"multirow","blocks":{"row_d3Yw7D":{"type":"row","settings":{"caption":"Caption","heading":"Row","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","button_label":"Button label","button_link":"","link_window":true,"view_all_style":"link","row_color_scheme":""}},"row_dFmJ6e":{"type":"row","settings":{"caption":"Caption","heading":"Row","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","button_label":"Button label","button_link":"","link_window":true,"view_all_style":"link","row_color_scheme":""}},"row_z6gxiM":{"type":"row","settings":{"caption":"Caption","heading":"Row","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","button_label":"Button label","button_link":"","link_window":true,"view_all_style":"link","row_color_scheme":""}}},"block_order":["row_d3Yw7D","row_dFmJ6e","row_z6gxiM"],"settings":{"image_height":"medium","desktop_image_width":"medium","heading_size":"h1","text_style":"body","desktop_content_position":"middle","desktop_content_alignment":"left","image_layout":"alternate-left","row_gap":20,"section_color_scheme":"","mobile_content_alignment":"left","padding_top":0,"padding_bottom":60}}},"order":["main","multirow_e3MPJr"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "heading_size": "h0",
+        "head_align": "left",
+        "heading_color_scheme": "",
+        "head_space": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_cWrNVM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QFdJzA": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Flexible Navigation Structure<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Lty9FA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Organize your product categories in a way that makes sense for your store and your customers.<\/p><p> Whether you have a handful of broad categories or a wide range of subcategories, the Category in Header feature<\/p><p>accommodates various navigation structures, ensuring that visitors can find what they're looking for with ease.<\/p>",
+            "text_style": "body",
+            "custom_text": "",
+            "show_icon": "present-icon",
+            "content_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QFdJzA",
+        "text_Lty9FA"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_content_size": "large",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "hero_banner_LMAzMG": {
+      "type": "hero-banner",
+      "settings": {
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Mega-Menue.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt-image",
+        "desktop_content_position": "middle-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_EfXd8R": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_da7YHY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Predictive default and live search",
+            "heading_size": "h1"
+          }
+        },
+        "text_WzwhdQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tailor the search experience to match your brand's aesthetic and user preferences. <\/p><p>With customizable search options, you can choose the layout, styling, and behavior of the search bar and results, <\/p><p>ensuring a seamless integration with your Shopify theme and a cohesive brand experience.<\/p>",
+            "text_style": "body",
+            "custom_text": "",
+            "show_icon": "present-icon",
+            "content_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_da7YHY",
+        "text_WzwhdQ"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_content_size": "large",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "hero_banner_Ri9FUt": {
+      "type": "hero-banner",
+      "settings": {
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Search_d1a4e661-5e40-4cdf-93f7-4fb2bf9a2c72.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt-image",
+        "desktop_content_position": "middle-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_jLA4MK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BWxmaG": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Maximize Sales with Cart Drawer Upsell Products<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_jKtHpb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Increase your store's revenue potential with our Cart Drawer featuring Upsell Products. <\/p><p>Seamlessly integrate upsell recommendations into the cart drawer, encouraging customers <\/p><p>to add complementary items to their purchase and boosting average order value.<\/p>",
+            "text_style": "body",
+            "custom_text": "",
+            "show_icon": "present-icon",
+            "content_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BWxmaG",
+        "text_jKtHpb"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_content_size": "large",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "hero_banner_BUqwBV": {
+      "type": "hero-banner",
+      "settings": {
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Cart-Drawer.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt-image",
+        "desktop_content_position": "middle-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_text_eW9VhM": {
+      "type": "custom-text",
+      "blocks": {
+        "text_jN9E69": {
+          "type": "text",
+          "settings": {
+            "storytitle": "<strong>Engagement with Promotional Banners on Collections.<\/strong>",
+            "storydesc": "<p>Elevate your collection pages and capture visitors' attention with Promotional Banners. Showcase compelling offers, announcements, or featured products directly on your collection pages, providing customers with relevant information and driving them towards conversion.<\/p>",
+            "showtext": "Collections",
+            "link": "shopify:\/\/collections",
+            "link_window": true,
+            "view_all_style": "solid",
+            "color_cmenu": "scheme-abe3bc68-5409-41dd-abcf-8f9ac474947a"
+          }
+        },
+        "text_J6gHLy": {
+          "type": "text",
+          "settings": {
+            "storytitle": "<strong>Create a unique store with our 20+ personalize sections<\/strong>",
+            "storydesc": "<p>Take customization to the next level with our selection of 20+ personalized sections. From hero banners and product grids to testimonials and Instagram feeds, our platform offers a wide range of customizable sections that allow you to tailor your store's design.<\/p>",
+            "showtext": "Sections",
+            "link": "shopify:\/\/collections",
+            "link_window": true,
+            "view_all_style": "solid",
+            "color_cmenu": "scheme-abe3bc68-5409-41dd-abcf-8f9ac474947a"
+          }
+        }
+      },
+      "block_order": [
+        "text_jN9E69",
+        "text_J6gHLy"
+      ],
+      "settings": {
+        "title": "<strong>Key Features of Our Theme<\/strong>",
+        "heading_size": "h0",
+        "head_align": "left",
+        "heading_color_scheme": "scheme-abe3bc68-5409-41dd-abcf-8f9ac474947a",
+        "head_space": true,
+        "description": "",
+        "description_style": "body",
+        "color_cmainmenu": "",
+        "padding_top": 60,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_MUTiNq": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XVGack": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_7.png",
+            "img_title": "",
+            "img_text": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "button_style": "solid"
+          }
+        },
+        "column_YbeRgx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_8.png",
+            "img_title": "",
+            "img_text": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "button_style": "solid"
+          }
+        },
+        "column_TUz9nU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_9.png",
+            "img_title": "",
+            "img_text": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "column_XVGack",
+        "column_YbeRgx",
+        "column_TUz9nU"
+      ],
+      "settings": {
+        "title": "Multiple product cards",
+        "heading_size": "h0",
+        "head_align": "left",
+        "heading_color_scheme": "",
+        "head_space": true,
+        "description": "",
+        "description_style": "body",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "image_content_alignment": "center",
+        "column_alignment": "left",
+        "button_label": "",
+        "button_link": "",
+        "view_all_style": "link",
+        "color_scheme": "",
+        "card_color_scheme": "inverse",
+        "background_style": "primary",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_hkXTz6": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_h784fW": {
+          "type": "collapsible_row",
+          "settings": {
+            "default_open": true,
+            "heading": "Immersive Image Display",
+            "icon": "fire",
+            "row_content": "<p>Present your products in stunning detail with our fully supported image feature. Showcase high-resolution images that allow customers to zoom in and explore every aspect of your products, creating an immersive  shopping experience.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HRV8eg": {
+          "type": "collapsible_row",
+          "settings": {
+            "default_open": true,
+            "heading": "Explore in 3D",
+            "icon": "fire",
+            "row_content": "<p>Bring your products to life with interactive 3D models. Showcase every angle and detail, allowing customers to explore your products from every perspective. Whether it's a piece of furniture or a high-tech gadget, 3D models provide a realistic representation that enhances the shopping experience.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4qjC8M": {
+          "type": "collapsible_row",
+          "settings": {
+            "default_open": true,
+            "heading": "User-Friendly Interface",
+            "icon": "fire",
+            "row_content": "<p>Enhance the shopping experience with an intuitive Variant Picker interface. Whether your customers prefer a simple dropdown menu or interactive pill-style options, our platform provides a user-friendly interface that makes selecting product variants effortless.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_AtWKcK": {
+          "type": "collapsible_row",
+          "settings": {
+            "default_open": true,
+            "heading": "Increase Average Order Value",
+            "icon": "fire",
+            "row_content": "<p>Drive revenue growth by increasing the average order value of each transaction. Our Complementary Products feature encourages customers to  add more items to their cart, resulting in larger purchases and higher overall sales. By strategically pairing products together, you can create compelling offers that entice customers to buy more.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pQKXYQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "default_open": true,
+            "heading": "Instant Inventory Visibility",
+            "icon": "fire",
+            "row_content": "<p>Provide instant visibility into your product availability with the Product Stock Bar. Customers can quickly see the remaining stock for each item, helping them make informed decisions and avoid disappointment due to out-of-stock items.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3mggNb": {
+          "type": "collapsible_row",
+          "settings": {
+            "default_open": true,
+            "heading": "Visualize Options with Color Swatches",
+            "icon": "fire",
+            "row_content": "<p>Enhance the shopping experience for your customers with our Color Swatches feature. Enable customers to visualize product options effortlessly by displaying color swatches that represent available choices, making it easier for them to find exactly what they're looking for.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7PD4Cy": {
+          "type": "collapsible_row",
+          "settings": {
+            "default_open": true,
+            "heading": "Create Urgency with Product Timers",
+            "icon": "fire",
+            "row_content": "<p>Drive sales and increase conversions with our Product Timer feature. Instill a sense of urgency in your customers by showcasing countdown timers that indicate limited-time offers, flash sales, or special promotions, motivating them to make a purchase before time runs out.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_twDrag": {
+          "type": "collapsible_row",
+          "settings": {
+            "default_open": true,
+            "heading": "Drive Conversions",
+            "icon": "fire",
+            "row_content": "<p>Increase conversions and improve customer satisfaction by providing relevant and helpful product recommendations. Our Related Products feature helps customers discover additional items that complement their purchases, making it easier for them to find everything they need in one place and increasing their likelihood of completing a purchase.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_h784fW",
+        "collapsible_row_HRV8eg",
+        "collapsible_row_4qjC8M",
+        "collapsible_row_AtWKcK",
+        "collapsible_row_pQKXYQ",
+        "collapsible_row_3mggNb",
+        "collapsible_row_7PD4Cy",
+        "collapsible_row_twDrag"
+      ],
+      "settings": {
+        "heading": "Product page",
+        "heading_size": "h2",
+        "head_align": "left",
+        "heading_color_scheme": "",
+        "head_space": true,
+        "description": "",
+        "description_style": "body",
+        "layout": "section",
+        "color_scheme": "",
+        "secondary_background": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_cWrNVM",
+    "hero_banner_LMAzMG",
+    "rich_text_EfXd8R",
+    "hero_banner_Ri9FUt",
+    "rich_text_jLA4MK",
+    "hero_banner_BUqwBV",
+    "custom_text_eW9VhM",
+    "multicolumn_MUTiNq",
+    "collapsible_content_hkXTz6"
+  ]
+}
